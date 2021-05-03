@@ -1,7 +1,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: argocd
+  name: app-of-apps-dev2
   namespace: argocd
 spec:
   # The project the application belongs to.
@@ -10,7 +10,7 @@ spec:
   source:
     repoURL: https://github.com/alaghusundhar/sundar-argocd-apps.git
     targetRevision: master
-    path: overlays/dev1
+    path: overlays/dev2
   destination:
     server: https://kubernetes.default.svc
     namespace: argocd

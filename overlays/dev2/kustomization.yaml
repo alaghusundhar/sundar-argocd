@@ -5,4 +5,4 @@ bases:
 resources:
   - argocd-ingress.yaml
   - app-argocd.yaml
-  - app-of-apps-v2.yaml
+  - app-of-apps.yaml
