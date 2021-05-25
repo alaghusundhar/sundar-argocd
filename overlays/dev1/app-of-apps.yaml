@@ -4,9 +4,7 @@ metadata:
   name: app-of-apps
   namespace: argocd
 spec:
-  # The project the application belongs to.
   project: default
-  # Source of the application manifests
   source:
     repoURL: https://github.com/alaghusundhar/sundar-argocd.git
     targetRevision: master
