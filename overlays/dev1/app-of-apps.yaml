@@ -6,11 +6,11 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: 'https://github.com/alaghusundhar/sundar-argocd.git'
+    repoURL: https://github.com/alaghusundhar/sundar-argocd.git
     targetRevision: master
     path: overlays/dev1/app-of-apps
   destination:
-    server: 'https://kubernetes.default.svc'
+    server: https://kubernetes.default.svc
     namespace: argocd
   syncPolicy:
    automated:
