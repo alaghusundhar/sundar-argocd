@@ -2382,12 +2382,13 @@ spec:
   - name: http
     port: 80
     protocol: TCP
+    nodePort: 30950
     targetPort: 8080
   - name: https
     port: 443
     protocol: TCP
     targetPort: 8080
-  type: LoadBalancer  
+  type: NodePort
   selector:
     app.kubernetes.io/name: argocd-server
 ---
@@ -2643,6 +2644,7 @@ spec:
         name: argocd-server
         ports:
         - containerPort: 8080
+          hostPort: 80
         - containerPort: 8083
         readinessProbe:
           httpGet:
