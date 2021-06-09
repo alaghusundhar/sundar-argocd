@@ -10,7 +10,7 @@ metadata:
     nginx.ingress.kubernetes.io/ssl-passthrough: "true"
 spec:
   rules:
-  - host: sundar.argocd.bizx.com
+  - host: sundar.k8s.poc
     http:
       paths:
       - backend:
