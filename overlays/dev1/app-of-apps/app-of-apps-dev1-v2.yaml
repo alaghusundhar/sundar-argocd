@@ -23,7 +23,7 @@ spec:
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: app-of-apps-dev1
+  name: app-of-apps-dev1-jenkins
   namespace: argocd
 spec:
   # The project the application belongs to.
