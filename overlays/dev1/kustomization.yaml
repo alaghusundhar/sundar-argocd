@@ -3,6 +3,6 @@ kind: Kustomization
 bases:
   - ../../base/
 resources:
-#  - argocd-ingress.yaml
+  - argocd-ingress.yaml
   - argocd.yaml
   - app-of-apps.yaml
